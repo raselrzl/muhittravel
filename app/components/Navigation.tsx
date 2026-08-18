@@ -26,7 +26,7 @@ export const navigationItems = [
   },
    {
     name: "Umrah",
-    href: "/Umrah",
+    href: "/umrah",
   },
   {
     name: "Contact",
