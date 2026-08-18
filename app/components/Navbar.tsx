@@ -23,7 +23,7 @@ export default function Navbar() {
 
           <div>
             <div className="text-lg font-bold tracking-tight text-white">
-              Muhit<span className="text-blue-400">Travels</span>
+              MK<span className="text-blue-400">World</span>
             </div>
 
             <div className="hidden text-[9px] font-semibold uppercase tracking-[0.22em] text-zinc-500 sm:block">
