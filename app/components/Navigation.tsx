@@ -24,6 +24,10 @@ export const navigationItems = [
     name: "Cyprus",
     href: "/cyprus",
   },
+   {
+    name: "Umrah",
+    href: "/Umrah",
+  },
   {
     name: "Contact",
     href: "/contact",
