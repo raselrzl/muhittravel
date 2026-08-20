@@ -19,7 +19,7 @@ const team = [
     role: "CEO",
     country: "Sweden",
     countryCode: "🇸🇪",
-    image: "/team/abdul-muhit.jpg",
+    image: "/muhit.jpeg",
     description:
       "Leading the vision of the company and helping students and travelers connect with opportunities around the world.",
   },
@@ -42,11 +42,11 @@ const team = [
       "Supporting students with practical guidance and connecting them with opportunities in different destinations.",
   },
   {
-    name: "Your Name",
+    name: "Sheikh Karima",
     role: "Travel & Education Consultant",
-    country: "Bangladesh",
-    countryCode: "🇧🇩",
-    image: "/team/consultant-3.jpg",
+ /*    country: "Bangladesh",
+    countryCode: "🇧🇩", *//* 
+    image: "/team/consultant-3.jpg", */
     description:
       "Working closely with students and families to make the journey from planning to departure more comfortable.",
   },

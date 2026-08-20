@@ -10,7 +10,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-[#030712]/85 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-[#030712] backdrop-blur-2xl">
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
         {/* Logo */}
         <Link
@@ -19,14 +19,14 @@ export default function Navbar() {
           className="group flex items-center gap-3"
         >
           {/* Actual MK World Logo */}
-          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden">
+          <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden">
             <Image
               src="/mklogo.png"
               alt="MK World"
               width={40}
               height={40}
               priority
-              className="h-10 w-10 object-contain transition duration-300 group-hover:scale-105"
+              className="h-15 w-15 object-contain transition duration-300 group-hover:scale-105"
             />
           </div>
 
