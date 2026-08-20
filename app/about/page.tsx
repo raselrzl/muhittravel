@@ -15,7 +15,7 @@ import {
 
 const team = [
   {
-    name: "Abdul Muhit",
+    name: "M A Muhit",
     role: "CEO",
     country: "Sweden",
     countryCode: "🇸🇪",
@@ -44,8 +44,8 @@ const team = [
   {
     name: "Sheikh Karima",
     role: "Travel & Education Consultant",
- /*    country: "Bangladesh",
-    countryCode: "🇧🇩", *//* 
+    /*    country: "Bangladesh",
+    countryCode: "🇧🇩", */ /* 
     image: "/team/consultant-3.jpg", */
     description:
       "Working closely with students and families to make the journey from planning to departure more comfortable.",
@@ -134,16 +134,16 @@ export default function AboutPage() {
               </h1>
 
               <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-                MK World is built around a simple idea: international
-                education and travel should feel more personal, understandable,
-                and connected.
+                MK World is built around a simple idea: international education
+                and travel should feel more personal, understandable, and
+                connected.
               </p>
 
               <p className="mt-5 max-w-2xl text-sm leading-7 text-zinc-500">
                 Our team is connected across different countries and
                 backgrounds, bringing together local knowledge, international
-                experience, and a friendly approach to helping people plan
-                their next journey.
+                experience, and a friendly approach to helping people plan their
+                next journey.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -206,8 +206,7 @@ export default function AboutPage() {
 
               <div className="border-l-2 border-blue-500 bg-blue-500/[0.04] px-6 py-5">
                 <p className="font-medium text-zinc-200">
-                  Different countries. Different experiences. One friendly
-                  team.
+                  Different countries. Different experiences. One friendly team.
                 </p>
               </div>
             </div>
@@ -306,9 +305,7 @@ export default function AboutPage() {
 
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   Our team is
-                  <span className="block text-zinc-500">
-                    already abroad.
-                  </span>
+                  <span className="block text-zinc-500">already abroad.</span>
                 </h2>
 
                 <p className="mt-6 max-w-xl leading-8 text-zinc-500">
@@ -403,10 +400,9 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="mt-6 max-w-xl leading-8 text-zinc-400">
-                  From your first question to your departure day, we want you
-                  to have someone you can talk to. Our role is to make
-                  complicated international processes feel clearer and more
-                  approachable.
+                  From your first question to your departure day, we want you to
+                  have someone you can talk to. Our role is to make complicated
+                  international processes feel clearer and more approachable.
                 </p>
 
                 <Link
@@ -462,9 +458,8 @@ export default function AboutPage() {
             </h2>
 
             <p className="mx-auto mt-7 max-w-2xl leading-8 text-zinc-400">
-              Have a question about studying abroad, choosing a destination,
-              or preparing for your next journey? Talk to our international
-              team.
+              Have a question about studying abroad, choosing a destination, or
+              preparing for your next journey? Talk to our international team.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
@@ -529,24 +524,15 @@ export default function AboutPage() {
                 About
               </Link>
 
-              <Link
-                href="/sweden"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/sweden" className="transition hover:text-blue-400">
                 Sweden
               </Link>
 
-              <Link
-                href="/russia"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/russia" className="transition hover:text-blue-400">
                 Russia
               </Link>
 
-              <Link
-                href="/contact"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/contact" className="transition hover:text-blue-400">
                 Contact
               </Link>
             </div>
@@ -567,9 +553,7 @@ export default function AboutPage() {
 
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
-            <p>
-              © {new Date().getFullYear()} MK World. All rights reserved.
-            </p>
+            <p>© {new Date().getFullYear()} MK World. All rights reserved.</p>
 
             <div className="flex items-center gap-2">
               <Globe2 className="h-3 w-3" />
