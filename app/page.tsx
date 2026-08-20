@@ -10,8 +10,6 @@ import {
   Globe2,
   GraduationCap,
   HeartHandshake,
-  MapPinned,
-  MessageCircle,
   Plane,
   ShieldCheck,
   Sparkles,
@@ -177,8 +175,6 @@ export default function Home() {
           className="relative mx-auto flex min-h-[calc(100vh-80px)] w-full max-w-7xl items-center px-5 py-20 sm:px-8 lg:px-10"
         >
           <div className="grid w-full items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
-            {/* HERO CONTENT */}
-
             <div className="relative animate-[fadeIn_0.8s_ease-out]">
               <div className="mb-7 inline-flex animate-pulse items-center gap-2 border border-blue-400/20 bg-blue-500/[0.06] px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300 [animation-duration:4s]">
                 <Sparkles className="h-3.5 w-3.5" />
@@ -243,8 +239,6 @@ export default function Home() {
             ====================================================== */}
 
             <div className="relative mx-auto flex min-h-[520px] w-full max-w-[600px] items-center justify-center lg:min-h-[650px]">
-              {/* Orbit */}
-
               <div className="absolute h-[420px] w-[420px] animate-[spin_35s_linear_infinite] rounded-full border border-blue-400/[0.08] sm:h-[500px] sm:w-[500px]" />
 
               <div className="absolute h-[320px] w-[320px] animate-[spin_25s_linear_infinite_reverse] rounded-full border border-blue-400/[0.12] sm:h-[400px] sm:w-[400px]" />
@@ -473,9 +467,9 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 max-w-xl leading-8 text-zinc-400">
-                Planning to visit family, friends, attend an event, or explore a
-                new destination? We provide guidance for visit visa applications
-                and help you prepare the relevant documents.
+                Planning to visit family, friends, attend an event, or explore
+                a new destination? We provide guidance for visit visa
+                applications and help you prepare the relevant documents.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -545,8 +539,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(59,130,246,0.12),transparent_45%)]" />
 
           <div className="relative mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-10 lg:py-32">
-            {/* IMAGE / VISUAL */}
-
             <div className="relative order-2 lg:order-1">
               <div className="absolute -inset-5 animate-pulse bg-blue-500/10 blur-[80px] [animation-duration:5s]" />
 
@@ -581,8 +573,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* CONTENT */}
-
             <div className="order-1 lg:order-2">
               <div className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
                 <span className="h-px w-10 bg-blue-400" />
@@ -591,7 +581,9 @@ export default function Home() {
 
               <h2 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
                 Prepare for your
-                <span className="block text-blue-400">spiritual journey.</span>
+                <span className="block text-blue-400">
+                  spiritual journey.
+                </span>
               </h2>
 
               <p className="mt-6 max-w-xl leading-8 text-zinc-400">
@@ -675,8 +667,8 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 text-base leading-8 text-zinc-400">
-              Explore study opportunities and international education options in
-              destinations we support.
+              Explore study opportunities and international education options
+              in destinations we support.
             </p>
           </div>
 
@@ -846,7 +838,9 @@ export default function Home() {
                   <div className="flex items-start gap-3">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-blue-400 transition group-hover:scale-125" />
 
-                    <p className="text-sm leading-6 text-zinc-300">{reason}</p>
+                    <p className="text-sm leading-6 text-zinc-300">
+                      {reason}
+                    </p>
                   </div>
                 </div>
               ))}

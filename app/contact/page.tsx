@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 import {
-  ArrowLeft,
   ArrowRight,
   CheckCircle2,
   Compass,
@@ -15,14 +14,9 @@ import {
   Send,
   Sparkles,
 } from "lucide-react";
+import { submitContactForm } from "./contact";
 
-const countries = [
-  "Sweden",
-  "Russia",
-  "Cyprus",
-  "Saudi Arabia",
-  "Other",
-];
+const countries = ["Sweden", "Russia", "Cyprus", "Saudi Arabia", "Other"];
 
 const services = [
   "Student Visa",
@@ -50,25 +44,19 @@ export default function ContactPage() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
+      const result = await submitContactForm(formData);
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Something went wrong.");
+      if (!result.success) {
+        setError(result.message);
+        return;
       }
 
       setSuccess(true);
       form.reset();
-    } catch (err) {
-      setError(
-        err instanceof Error
-          ? err.message
-          : "Unable to send your message. Please try again.",
-      );
+    } catch (error) {
+      console.error(error);
+
+      setError("Unable to send your message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -104,7 +92,7 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 border border-blue-400/20 bg-blue-500/[0.06] px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
               <Sparkles className="h-3.5 w-3.5" />
-              Contact Travel Friends
+              Contact MK World
             </div>
 
             <h1 className="text-5xl font-black leading-[0.95] tracking-[-0.055em] text-white sm:text-6xl lg:text-8xl">
@@ -163,17 +151,17 @@ export default function ContactPage() {
                       </p>
 
                       <p className="mt-1 text-sm text-zinc-300">
-                        info@travelfriends.com
+                        support@mkworld.org
                       </p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-blue-500/10">
+                    {/*      <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-blue-500/10">
                       <Phone className="h-4 w-4 text-blue-400" />
-                    </div>
+                    </div> */}
 
-                    <div>
+                    {/*    <div>
                       <p className="text-xs font-bold uppercase tracking-wider text-zinc-600">
                         Phone / WhatsApp
                       </p>
@@ -181,7 +169,7 @@ export default function ContactPage() {
                       <p className="mt-1 text-sm text-zinc-300">
                         +880 XXX XXX XXXX
                       </p>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="flex gap-4">
@@ -255,8 +243,8 @@ export default function ContactPage() {
                   </h2>
 
                   <p className="mt-4 max-w-md leading-7 text-zinc-400">
-                    Your message has been received successfully. We&apos;ve
-                    also sent a confirmation email to your email address.
+                    Your message has been received successfully. We&apos;ve also
+                    sent a confirmation email to your email address.
                   </p>
 
                   <p className="mt-3 text-sm text-zinc-600">
@@ -274,7 +262,10 @@ export default function ContactPage() {
 
                     <button
                       type="button"
-                      onClick={() => setSuccess(false)}
+                      onClick={() => {
+                        setSuccess(false);
+                        setError("");
+                      }}
                       className="inline-flex h-12 items-center justify-center gap-2 border border-white/10 bg-white/[0.03] px-6 text-sm font-semibold text-zinc-300 transition hover:border-blue-400/30 hover:bg-blue-500/[0.04] hover:text-white"
                     >
                       Send Another Message
@@ -468,8 +459,8 @@ export default function ContactPage() {
                     </button>
 
                     <p className="text-center text-xs leading-5 text-zinc-600">
-                      By submitting this form, you agree that Travel Friends
-                      may contact you regarding your enquiry.
+                      By submitting this form, you agree that MK World may
+                      contact you regarding your enquiry.
                     </p>
                   </form>
                 </>
@@ -509,7 +500,7 @@ export default function ContactPage() {
               </Link>
 
               <Link
-                href="/omrah"
+                href="/umrah"
                 className="inline-flex h-12 items-center justify-center gap-2 border border-white/10 bg-white/[0.03] px-7 text-sm font-semibold text-zinc-300 transition hover:border-blue-400/30 hover:bg-blue-500/[0.04] hover:text-white"
               >
                 Explore Umrah
@@ -529,16 +520,13 @@ export default function ContactPage() {
           {/* Brand */}
 
           <div>
-            <Link
-              href="/"
-              className="inline-flex items-center gap-3"
-            >
+            <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center bg-blue-500/10">
                 <Compass className="h-5 w-5 text-blue-400" />
               </div>
 
               <span className="text-xl font-bold">
-                Travel<span className="text-blue-400">Friends</span>
+                MK<span className="text-blue-400">World</span>
               </span>
             </Link>
 
@@ -556,45 +544,27 @@ export default function ContactPage() {
             </h3>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-zinc-500">
-              <Link
-                href="/"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/" className="transition hover:text-blue-400">
                 Home
               </Link>
 
-              <Link
-                href="/about"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/about" className="transition hover:text-blue-400">
                 About
               </Link>
 
-              <Link
-                href="/sweden"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/sweden" className="transition hover:text-blue-400">
                 Sweden
               </Link>
 
-              <Link
-                href="/russia"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/russia" className="transition hover:text-blue-400">
                 Russia
               </Link>
 
-              <Link
-                href="/omrah"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/umrah" className="transition hover:text-blue-400">
                 Umrah
               </Link>
 
-              <Link
-                href="/contact"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/contact" className="transition hover:text-blue-400">
                 Contact
               </Link>
             </div>
@@ -621,10 +591,7 @@ export default function ContactPage() {
 
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
-            <p>
-              © {new Date().getFullYear()} Travel Friends. All rights
-              reserved.
-            </p>
+            <p>© {new Date().getFullYear()} MK World. All rights reserved.</p>
 
             <div className="flex items-center gap-2">
               <MapPin className="h-3 w-3" />

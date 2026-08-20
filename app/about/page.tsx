@@ -115,6 +115,7 @@ export default function AboutPage() {
 
         <div className="absolute bottom-[-300px] left-[-200px] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[150px]" />
       </div>
+
       <div className="relative z-10">
         {/* HERO */}
         <section className="relative">
@@ -122,7 +123,7 @@ export default function AboutPage() {
             <div className="max-w-4xl">
               <div className="mb-7 inline-flex items-center gap-2 border border-blue-400/20 bg-blue-500/[0.06] px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
                 <Sparkles className="h-3.5 w-3.5" />
-                About Travel Friends
+                About MK World
               </div>
 
               <h1 className="text-5xl font-black leading-[0.94] tracking-[-0.06em] sm:text-6xl lg:text-8xl">
@@ -133,7 +134,7 @@ export default function AboutPage() {
               </h1>
 
               <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-                Travel Friends is built around a simple idea: international
+                MK World is built around a simple idea: international
                 education and travel should feel more personal, understandable,
                 and connected.
               </p>
@@ -191,9 +192,9 @@ export default function AboutPage() {
               </p>
 
               <p>
-                That is why Travel Friends was created around people rather
-                than paperwork. Our team members are based in different parts
-                of the world, allowing us to bring different perspectives and
+                That is why MK World was created around people rather than
+                paperwork. Our team members are based in different parts of the
+                world, allowing us to bring different perspectives and
                 experiences to every conversation.
               </p>
 
@@ -227,7 +228,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               The people behind
               <span className="block text-zinc-500">
-                Travel Friends.
+                MK World.
               </span>
             </h2>
 
@@ -386,7 +387,7 @@ export default function AboutPage() {
               <div>
                 <div className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
                   <span className="h-px w-10 bg-blue-400" />
-                  Why Travel Friends
+                  Why MK World
                 </div>
 
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -466,7 +467,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-8 font-semibold text-white shadow-[0_0_50px_rgba(59,130,246,0.3)] transition hover:bg-blue-400"
               >
-                Contact Travel Friends
+                Contact MK World
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
@@ -492,7 +493,7 @@ export default function AboutPage() {
               </div>
 
               <span className="text-xl font-bold">
-                Travel<span className="text-blue-400">Friends</span>
+                MK <span className="text-blue-400">World</span>
               </span>
             </Link>
 
@@ -500,6 +501,13 @@ export default function AboutPage() {
               Student visa and travel guidance for people planning their next
               educational journey abroad.
             </p>
+
+            <a
+              href="mailto:support@mkworld.org"
+              className="mt-4 inline-block text-sm text-zinc-500 transition hover:text-blue-400"
+            >
+              support@mkworld.org
+            </a>
           </div>
 
           <div>
@@ -561,8 +569,7 @@ export default function AboutPage() {
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
             <p>
-              © {new Date().getFullYear()} Travel Friends. All rights
-              reserved.
+              © {new Date().getFullYear()} MK World. All rights reserved.
             </p>
 
             <div className="flex items-center gap-2">

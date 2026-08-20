@@ -13,7 +13,6 @@ import {
   Plane,
   ShieldCheck,
   Sparkles,
-  University,
 } from "lucide-react";
 
 const benefits = [
@@ -135,7 +134,7 @@ export default function SwedenPage() {
               </p>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-zinc-500">
-                Travel Friends helps students understand Swedish university
+                MK World helps students understand Swedish university
                 applications, residence permit preparation, and the practical
                 steps involved in moving abroad.
               </p>
@@ -175,7 +174,7 @@ export default function SwedenPage() {
               </div>
             </div>
 
-            {/* Morphic Sweden Visual */}
+            {/* Sweden Visual */}
             <div className="relative mx-auto flex h-[520px] w-full max-w-[560px] items-center justify-center">
               <div className="absolute h-[450px] w-[450px] rounded-full border border-blue-400/[0.07]" />
 
@@ -405,7 +404,7 @@ export default function SwedenPage() {
                 </p>
 
                 <p className="mt-4 max-w-xl leading-8 text-zinc-500">
-                  Travel Friends helps you understand the different stages and
+                  MK World helps you understand the different stages and
                   organize your preparation.
                 </p>
 
@@ -502,7 +501,7 @@ export default function SwedenPage() {
         {/* PROCESS */}
         <section
           id="process"
-          className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32"
+          className="mx-auto max-w-7xl scroll-mt-20 px-5 py-24 sm:px-8 lg:px-10 lg:py-32"
         >
           <div className="text-center">
             <div className="mb-5 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
@@ -628,7 +627,7 @@ export default function SwedenPage() {
 
             <p className="mx-auto mt-7 max-w-2xl leading-8 text-zinc-400">
               Tell us about your academic background and what you want to
-              study. We&apos;ll help you understand the next steps.
+              study. MK World will help you understand the next steps.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
@@ -636,7 +635,7 @@ export default function SwedenPage() {
                 href="/contact"
                 className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-8 font-semibold text-white shadow-[0_0_50px_rgba(59,130,246,0.3)] transition hover:bg-blue-400"
               >
-                Contact Travel Friends
+                Contact MK World
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
@@ -655,14 +654,15 @@ export default function SwedenPage() {
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/[0.06] bg-[#02050b]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_0.7fr_0.7fr] lg:px-10">
+          {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center bg-blue-500/10">
                 <Compass className="h-5 w-5 text-blue-400" />
               </div>
 
-              <span className="text-xl font-bold">
-                Travel<span className="text-blue-400">Friends</span>
+              <span className="text-xl font-bold tracking-tight">
+                MK <span className="text-blue-400">World</span>
               </span>
             </Link>
 
@@ -672,6 +672,7 @@ export default function SwedenPage() {
             </p>
           </div>
 
+          {/* Explore */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
               Explore
@@ -715,6 +716,7 @@ export default function SwedenPage() {
             </div>
           </div>
 
+          {/* Destinations */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
               Destinations
@@ -731,7 +733,7 @@ export default function SwedenPage() {
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
             <p>
-              © {new Date().getFullYear()} Travel Friends. All rights reserved.
+              © {new Date().getFullYear()} MK World. All rights reserved.
             </p>
 
             <div className="flex items-center gap-2">

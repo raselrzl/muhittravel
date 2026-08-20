@@ -129,48 +129,49 @@ export default function RussiaPage() {
     <main className="min-h-screen overflow-hidden bg-[#030712] text-white selection:bg-blue-500/40 selection:text-white">
       {/* Background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(96,165,250,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(96,165,250,0.025)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
-        <div className="absolute left-1/2 top-[-300px] h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-blue-600/15 blur-[150px]" />
+        <div className="absolute left-1/2 top-[-300px] h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-[160px]" />
 
-        <div className="absolute right-[-300px] top-[700px] h-[600px] w-[600px] rounded-full bg-cyan-500/10 blur-[150px]" />
+        <div className="absolute right-[-300px] top-[700px] h-[600px] w-[600px] rounded-full bg-sky-500/[0.07] blur-[160px]" />
 
-        <div className="absolute bottom-[-300px] left-[-200px] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[150px]" />
+        <div className="absolute bottom-[-300px] left-[-200px] h-[600px] w-[600px] rounded-full bg-indigo-600/[0.07] blur-[160px]" />
       </div>
+
       <div className="relative z-10">
-        {/* Hero */}
+        {/* HERO */}
         <section className="relative">
           <div className="mx-auto grid min-h-[720px] max-w-7xl items-center gap-16 px-5 py-24 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:py-28">
-            {/* Content */}
             <div>
-              <div className="mb-7 inline-flex items-center gap-2 border border-blue-400/20 bg-blue-500/[0.06] px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
-                <Sparkles className="h-3.5 w-3.5" />
-                Study in Russia
+              {/* Brand label */}
+              <div className="mb-7 inline-flex items-center gap-2 border border-blue-400/15 bg-blue-500/[0.05] px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
+                <Compass className="h-3.5 w-3.5" />
+                Travel Friends · Study Abroad
               </div>
 
               <h1 className="text-5xl font-black leading-[0.94] tracking-[-0.06em] sm:text-6xl lg:text-8xl">
-                YOUR FUTURE
-                <span className="mt-2 block bg-gradient-to-r from-blue-300 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
-                  STARTS HERE.
+                STUDY IN
+                <span className="mt-2 block bg-gradient-to-r from-blue-300 via-blue-500 to-sky-300 bg-clip-text text-transparent">
+                  RUSSIA.
                 </span>
               </h1>
 
-              <p className="mt-8 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">
-                Explore opportunities to study in Russia and get practical,
-                personal guidance throughout your international education
-                journey.
+              <p className="mt-8 max-w-xl text-base leading-8 text-zinc-300 sm:text-lg">
+                Explore study opportunities in Russia with practical guidance
+                for your application, documentation, student visa preparation,
+                and journey abroad.
               </p>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-zinc-500">
-                From exploring study options and preparing your application to
-                understanding student visa requirements and getting ready for
-                departure, Travel Friends helps you understand each stage.
+                Travel Friends helps students understand their options and
+                navigate the different stages of planning an international
+                education journey.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/contact"
-                  className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-7 font-semibold text-white shadow-[0_0_40px_rgba(59,130,246,0.25)] transition hover:bg-blue-400"
+                  className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-7 font-semibold text-white shadow-[0_0_40px_rgba(59,130,246,0.2)] transition hover:bg-blue-400"
                 >
                   Start Your Russia Journey
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -187,7 +188,7 @@ export default function RussiaPage() {
               <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs text-zinc-500">
                 <div className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-blue-400" />
-                  Personal guidance
+                  Study guidance
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -202,20 +203,20 @@ export default function RussiaPage() {
               </div>
             </div>
 
-            {/* Visual */}
+            {/* Russia Visual */}
             <div className="relative mx-auto flex h-[520px] w-full max-w-[560px] items-center justify-center">
-              <div className="absolute h-[450px] w-[450px] rounded-full border border-blue-400/[0.07]" />
+              <div className="absolute h-[450px] w-[450px] rounded-full border border-blue-400/[0.06]" />
 
-              <div className="absolute h-[360px] w-[360px] rounded-full border border-blue-400/[0.11]" />
+              <div className="absolute h-[360px] w-[360px] rounded-full border border-blue-400/[0.09]" />
 
-              <div className="absolute h-[270px] w-[270px] rounded-full border border-dashed border-cyan-400/20" />
+              <div className="absolute h-[270px] w-[270px] rounded-full border border-dashed border-sky-400/15" />
 
-              <div className="absolute h-[300px] w-[300px] rounded-full bg-blue-600/20 blur-[100px]" />
+              <div className="absolute h-[300px] w-[300px] rounded-full bg-blue-600/15 blur-[110px]" />
 
-              <div className="absolute h-[180px] w-[180px] rounded-full bg-cyan-400/20 blur-[70px]" />
+              <div className="absolute h-[180px] w-[180px] rounded-full bg-sky-400/15 blur-[80px]" />
 
-              <div className="relative z-10 flex h-56 w-56 flex-col items-center justify-center rounded-full border border-blue-300/20 bg-[#071226]/80 shadow-[0_0_120px_rgba(37,99,235,0.25)] backdrop-blur-2xl">
-                <div className="absolute inset-4 rounded-full border border-blue-400/10" />
+              <div className="relative z-10 flex h-56 w-56 flex-col items-center justify-center rounded-full border border-blue-300/15 bg-[#071226]/85 shadow-[0_0_120px_rgba(37,99,235,0.18)] backdrop-blur-2xl">
+                <div className="absolute inset-4 rounded-full border border-blue-400/[0.08]" />
 
                 <div className="text-7xl">🇷🇺</div>
 
@@ -231,11 +232,11 @@ export default function RussiaPage() {
 
                   <div>
                     <p className="text-sm font-bold text-white">
-                      International Study
+                      Study Options
                     </p>
 
                     <p className="text-[10px] text-zinc-500">
-                      Explore your options
+                      Explore your direction
                     </p>
                   </div>
                 </div>
@@ -243,11 +244,11 @@ export default function RussiaPage() {
 
               <div className="absolute right-0 top-[42%] border border-white/10 bg-[#091426]/85 p-4 backdrop-blur-xl">
                 <div className="flex items-center gap-3">
-                  <FileCheck2 className="h-5 w-5 text-cyan-400" />
+                  <FileCheck2 className="h-5 w-5 text-sky-400" />
 
                   <div>
                     <p className="text-sm font-bold text-white">
-                      Application Support
+                      Application Guidance
                     </p>
 
                     <p className="text-[10px] text-zinc-500">
@@ -273,16 +274,16 @@ export default function RussiaPage() {
                 </div>
               </div>
 
-              <div className="absolute right-[18%] top-[13%] h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_20px_6px_rgba(103,232,249,0.4)]" />
+              <div className="absolute right-[18%] top-[13%] h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_20px_6px_rgba(125,211,252,0.3)]" />
 
-              <div className="absolute bottom-[20%] right-[8%] h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_20px_6px_rgba(96,165,250,0.4)]" />
+              <div className="absolute bottom-[20%] right-[8%] h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_20px_6px_rgba(96,165,250,0.3)]" />
 
-              <div className="absolute left-[17%] top-[48%] h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_20px_5px_rgba(255,255,255,0.25)]" />
+              <div className="absolute left-[17%] top-[48%] h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_20px_5px_rgba(255,255,255,0.2)]" />
             </div>
           </div>
         </section>
 
-        {/* Why Russia */}
+        {/* WHY RUSSIA */}
         <section className="border-y border-white/[0.06] bg-white/[0.015]">
           <div className="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-32">
             <div>
@@ -293,7 +294,9 @@ export default function RussiaPage() {
 
               <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 A new place.
-                <span className="block text-zinc-500">A new opportunity.</span>
+                <span className="block text-zinc-500">
+                  A new opportunity.
+                </span>
               </h2>
             </div>
 
@@ -305,16 +308,16 @@ export default function RussiaPage() {
               </p>
 
               <p>
-                Students considering Russia may explore fields such as medicine,
-                engineering, technology, science, business, economics,
-                architecture, and other areas of study.
+                Students considering Russia may explore fields such as
+                medicine, engineering, technology, science, business,
+                economics, architecture, and other areas of study.
               </p>
 
               <p>
                 Studying abroad is an important decision. Before moving forward,
-                it is important to understand the university, program, admission
-                requirements, documentation, visa process, and practical
-                arrangements involved.
+                it is important to understand the university, program,
+                admission requirements, documentation, visa process, and
+                practical arrangements involved.
               </p>
 
               <div className="border-l-2 border-blue-500 bg-blue-500/[0.04] px-6 py-5">
@@ -327,7 +330,7 @@ export default function RussiaPage() {
           </div>
         </section>
 
-        {/* Benefits */}
+        {/* BENEFITS */}
         <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
           <div className="max-w-2xl">
             <div className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
@@ -337,13 +340,15 @@ export default function RussiaPage() {
 
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Why consider
-              <span className="block text-zinc-500">studying in Russia?</span>
+              <span className="block text-zinc-500">
+                studying in Russia?
+              </span>
             </h2>
 
             <p className="mt-6 max-w-xl leading-8 text-zinc-500">
               Every student has different academic goals. The right choice
-              depends on your background, preferred field, program, institution,
-              and current requirements.
+              depends on your background, preferred field, program,
+              institution, and current requirements.
             </p>
           </div>
 
@@ -373,7 +378,7 @@ export default function RussiaPage() {
           </div>
         </section>
 
-        {/* Areas of Study */}
+        {/* SUBJECTS */}
         <section className="border-y border-white/[0.06] bg-[#050b15]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-[0.75fr_1.25fr]">
@@ -423,7 +428,7 @@ export default function RussiaPage() {
           </div>
         </section>
 
-        {/* Visa Guidance */}
+        {/* VISA */}
         <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
           <div className="relative overflow-hidden border border-blue-400/10 bg-blue-500/[0.035]">
             <div className="absolute right-[-150px] top-[-150px] h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-[100px]" />
@@ -436,7 +441,9 @@ export default function RussiaPage() {
 
                 <h2 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   Student visa
-                  <span className="block text-zinc-500">preparation.</span>
+                  <span className="block text-zinc-500">
+                    preparation.
+                  </span>
                 </h2>
 
                 <p className="mt-6 max-w-xl leading-8 text-zinc-400">
@@ -446,9 +453,9 @@ export default function RussiaPage() {
                 </p>
 
                 <p className="mt-4 max-w-xl leading-8 text-zinc-500">
-                  We help you understand the relevant steps and organize your
-                  preparation so you can approach the process with greater
-                  clarity.
+                  Travel Friends helps you understand the relevant steps and
+                  organize your preparation so you can approach the process
+                  with greater clarity.
                 </p>
 
                 <Link
@@ -484,16 +491,17 @@ export default function RussiaPage() {
                 </div>
 
                 <div className="mt-7 border-t border-white/[0.07] pt-6 text-xs leading-6 text-zinc-600">
-                  Visa requirements and immigration decisions are determined by
-                  the relevant authorities and may change. Always verify the
-                  latest official requirements before submitting an application.
+                  Visa requirements and immigration decisions are determined
+                  by the relevant authorities and may change. Always verify
+                  the latest official requirements before submitting an
+                  application.
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Documents */}
+        {/* DOCUMENTS */}
         <section className="border-y border-white/[0.06] bg-white/[0.015]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
@@ -505,13 +513,15 @@ export default function RussiaPage() {
 
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   Get your
-                  <span className="block text-zinc-500">documents ready.</span>
+                  <span className="block text-zinc-500">
+                    documents ready.
+                  </span>
                 </h2>
 
                 <p className="mt-6 leading-8 text-zinc-500">
                   Exact requirements can vary depending on your university,
-                  program, application route, and current official requirements.
-                  Your preparation may involve documents such as:
+                  program, application route, and current official
+                  requirements. Your preparation may involve documents such as:
                 </p>
               </div>
 
@@ -535,7 +545,7 @@ export default function RussiaPage() {
           </div>
         </section>
 
-        {/* Process */}
+        {/* PROCESS */}
         <section
           id="process"
           className="mx-auto max-w-7xl scroll-mt-20 px-5 py-24 sm:px-8 lg:px-10 lg:py-32"
@@ -580,7 +590,7 @@ export default function RussiaPage() {
           </div>
         </section>
 
-        {/* Why Travel Friends */}
+        {/* WHY TRAVEL FRIENDS */}
         <section className="border-y border-white/[0.06] bg-[#050b15]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
@@ -634,16 +644,16 @@ export default function RussiaPage() {
 
         {/* CTA */}
         <section className="relative overflow-hidden border-t border-white/[0.06]">
-          <div className="absolute inset-0 bg-blue-600/[0.06]" />
+          <div className="absolute inset-0 bg-blue-600/[0.05]" />
 
-          <div className="absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/15 blur-[130px]" />
+          <div className="absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[140px]" />
 
           <div className="relative mx-auto max-w-4xl px-5 py-24 text-center sm:px-8 lg:py-32">
             <HeartHandshake className="mx-auto h-9 w-9 text-blue-400" />
 
             <h2 className="mt-7 text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
               Thinking about
-              <span className="block bg-gradient-to-r from-blue-300 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-300 via-blue-500 to-sky-300 bg-clip-text text-transparent">
                 studying in Russia?
               </span>
             </h2>
@@ -656,7 +666,7 @@ export default function RussiaPage() {
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-8 font-semibold text-white shadow-[0_0_50px_rgba(59,130,246,0.3)] transition hover:bg-blue-400"
+                className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-8 font-semibold text-white shadow-[0_0_50px_rgba(59,130,246,0.25)] transition hover:bg-blue-400"
               >
                 Contact Travel Friends
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -674,7 +684,7 @@ export default function RussiaPage() {
         </section>
       </div>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <footer className="relative z-10 border-t border-white/[0.06] bg-[#02050b]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_0.7fr_0.7fr] lg:px-10">
           {/* Brand */}
@@ -684,15 +694,20 @@ export default function RussiaPage() {
                 <Compass className="h-5 w-5 text-blue-400" />
               </div>
 
-              <span className="text-xl font-bold">
+              <span className="text-xl font-bold tracking-tight">
                 Travel<span className="text-blue-400">Friends</span>
               </span>
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-zinc-500">
-              Student visa and travel guidance for people planning their next
-              educational journey abroad.
+              Study abroad and travel guidance for students planning their next
+              educational journey.
             </p>
+
+            <div className="mt-6 flex items-center gap-2 text-xs text-zinc-600">
+              <Globe2 className="h-3.5 w-3.5" />
+              <span>Study Abroad · Travel · Guidance</span>
+            </div>
           </div>
 
           {/* Explore */}
@@ -702,19 +717,45 @@ export default function RussiaPage() {
             </h3>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-zinc-500">
-              <Link href="/" className="transition hover:text-blue-400">
+              <Link
+                href="/"
+                className="transition hover:text-blue-400"
+              >
                 Home
               </Link>
 
-              <Link href="/about" className="transition hover:text-blue-400">
+              <Link
+                href="/about"
+                className="transition hover:text-blue-400"
+              >
                 About
               </Link>
 
-              <Link href="/russia" className="text-blue-400">
+              <Link
+                href="/sweden"
+                className="transition hover:text-blue-400"
+              >
+                Sweden
+              </Link>
+
+              <Link
+                href="/russia"
+                className="text-blue-400"
+              >
                 Russia
               </Link>
 
-              <Link href="/contact" className="transition hover:text-blue-400">
+              <Link
+                href="/cyprus"
+                className="transition hover:text-blue-400"
+              >
+                Cyprus
+              </Link>
+
+              <Link
+                href="/contact"
+                className="transition hover:text-blue-400"
+              >
                 Contact
               </Link>
             </div>
@@ -726,7 +767,7 @@ export default function RussiaPage() {
               Destinations
             </h3>
 
-            <div className="mt-5 flex flex-col gap-3 text-sm text-zinc-500">
+            <div className="mt-5 flex flex-col gap-3 text-sm">
               {footerDestinations.map((destination) => (
                 <Link
                   key={destination.name}
@@ -734,7 +775,7 @@ export default function RussiaPage() {
                   className={
                     destination.active
                       ? "text-blue-400"
-                      : "transition hover:text-blue-400"
+                      : "text-zinc-500 transition hover:text-blue-400"
                   }
                 >
                   {destination.flag} {destination.name}

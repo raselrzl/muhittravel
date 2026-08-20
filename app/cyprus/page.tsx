@@ -13,7 +13,6 @@ import {
   Plane,
   ShieldCheck,
   Sparkles,
-  University,
 } from "lucide-react";
 
 const benefits = [
@@ -101,8 +100,14 @@ const documents = [
 export default function CyprusPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#030712] text-white selection:bg-blue-500/40 selection:text-white">
-      {/* Background */}
-      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+      {/* =========================================================
+          BACKGROUND
+      ========================================================== */}
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      >
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
         <div className="absolute left-1/2 top-[-320px] h-[680px] w-[680px] -translate-x-1/2 rounded-full bg-blue-600/15 blur-[150px]" />
@@ -111,8 +116,12 @@ export default function CyprusPage() {
 
         <div className="absolute bottom-[-300px] left-[-200px] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[150px]" />
       </div>
+
       <div className="relative z-10">
-        {/* HERO */}
+        {/* =========================================================
+            HERO
+        ========================================================== */}
+
         <section>
           <div className="mx-auto grid min-h-[720px] max-w-7xl items-center gap-16 px-5 py-24 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:py-28">
             <div>
@@ -134,9 +143,9 @@ export default function CyprusPage() {
               </p>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-zinc-500">
-                Travel Friends helps students understand study options,
-                application requirements, visa preparation, and the practical
-                steps involved in preparing for Cyprus.
+                MK World helps students understand study options, application
+                requirements, visa preparation, and the practical steps involved
+                in preparing for Cyprus.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -174,7 +183,10 @@ export default function CyprusPage() {
               </div>
             </div>
 
-            {/* Morphic Cyprus Visual */}
+            {/* =====================================================
+                CYPRUS VISUAL
+            ====================================================== */}
+
             <div className="relative mx-auto flex h-[520px] w-full max-w-[560px] items-center justify-center">
               <div className="absolute h-[450px] w-[450px] rounded-full border border-blue-400/[0.07]" />
 
@@ -247,7 +259,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* INTRO */}
+        {/* =========================================================
+            INTRO
+        ========================================================== */}
+
         <section className="border-y border-white/[0.06] bg-white/[0.015]">
           <div className="mx-auto grid max-w-7xl gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-32">
             <div>
@@ -286,15 +301,18 @@ export default function CyprusPage() {
 
               <div className="border-l-2 border-blue-500 bg-blue-500/[0.04] px-6 py-5">
                 <p className="font-medium text-zinc-200">
-                  Travel Friends helps you understand the journey before you
-                  take the next step.
+                  MK World helps you understand the journey before you take the
+                  next step.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* BENEFITS */}
+        {/* =========================================================
+            BENEFITS
+        ========================================================== */}
+
         <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
           <div className="max-w-2xl">
             <div className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
@@ -334,7 +352,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* SUBJECTS */}
+        {/* =========================================================
+            SUBJECTS
+        ========================================================== */}
+
         <section className="border-y border-white/[0.06] bg-[#050b15]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-[0.75fr_1.25fr]">
@@ -376,7 +397,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* APPLICATION + VISA */}
+        {/* =========================================================
+            APPLICATION + VISA
+        ========================================================== */}
+
         <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
           <div className="relative overflow-hidden border border-blue-400/10 bg-blue-500/[0.035]">
             <div className="absolute right-[-150px] top-[-150px] h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-[100px]" />
@@ -399,8 +423,8 @@ export default function CyprusPage() {
                 </p>
 
                 <p className="mt-4 max-w-xl leading-8 text-zinc-500">
-                  Travel Friends can help you understand the different stages
-                  and prepare for the next step.
+                  MK World can help you understand the different stages and
+                  prepare for the next step.
                 </p>
 
                 <Link
@@ -447,7 +471,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* DOCUMENTS */}
+        {/* =========================================================
+            DOCUMENTS
+        ========================================================== */}
+
         <section className="border-y border-white/[0.06] bg-white/[0.015]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
@@ -489,7 +516,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* PROCESS */}
+        {/* =========================================================
+            PROCESS
+        ========================================================== */}
+
         <section
           id="process"
           className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32"
@@ -529,7 +559,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* STUDENT LIFE */}
+        {/* =========================================================
+            STUDENT LIFE
+        ========================================================== */}
+
         <section className="border-y border-white/[0.06] bg-[#050b15]">
           <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
             <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
@@ -596,7 +629,10 @@ export default function CyprusPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* =========================================================
+            CTA
+        ========================================================== */}
+
         <section className="relative overflow-hidden border-t border-white/[0.06]">
           <div className="absolute inset-0 bg-blue-600/[0.06]" />
 
@@ -614,7 +650,8 @@ export default function CyprusPage() {
 
             <p className="mx-auto mt-7 max-w-2xl leading-8 text-zinc-400">
               Tell us about your education plans and what you want to study.
-              Let&apos;s discuss the options available for your Cyprus journey.
+              Let&apos;s discuss the options available for your Cyprus journey
+              with MK World.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
@@ -622,7 +659,7 @@ export default function CyprusPage() {
                 href="/contact"
                 className="group flex h-14 items-center justify-center gap-3 bg-blue-500 px-8 font-semibold text-white shadow-[0_0_50px_rgba(59,130,246,0.3)] transition hover:bg-blue-400"
               >
-                Contact Travel Friends
+                Contact MK World
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
@@ -638,9 +675,14 @@ export default function CyprusPage() {
         </section>
       </div>
 
-      {/* Footer */}
+      {/* =========================================================
+          FOOTER
+      ========================================================== */}
+
       <footer className="relative z-10 border-t border-white/[0.06] bg-[#02050b]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_0.7fr_0.7fr] lg:px-10">
+          {/* Brand */}
+
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center bg-blue-500/10">
@@ -648,15 +690,17 @@ export default function CyprusPage() {
               </div>
 
               <span className="text-xl font-bold">
-                Travel<span className="text-blue-400">Friends</span>
+                MK<span className="text-blue-400">World</span>
               </span>
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-zinc-500">
-              Student visa and travel guidance for people planning their next
-              educational journey abroad.
+              Student visa, travel, visit visa, and international education
+              guidance for people planning their next journey abroad.
             </p>
           </div>
+
+          {/* Explore */}
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
@@ -690,6 +734,8 @@ export default function CyprusPage() {
             </div>
           </div>
 
+          {/* Destinations */}
+
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
               Destinations
@@ -703,11 +749,11 @@ export default function CyprusPage() {
           </div>
         </div>
 
+        {/* Copyright */}
+
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
-            <p>
-              © {new Date().getFullYear()} Travel Friends. All rights reserved.
-            </p>
+            <p>© {new Date().getFullYear()} MK World. All rights reserved.</p>
 
             <div className="flex items-center gap-2">
               <MapPin className="h-3 w-3" />

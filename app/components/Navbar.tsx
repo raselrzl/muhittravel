@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { Compass, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Navigation from "./Navigation";
 
@@ -17,13 +18,23 @@ export default function Navbar() {
           onClick={() => setMobileOpen(false)}
           className="group flex items-center gap-3"
         >
-          <div className="flex h-10 w-10 items-center justify-center border border-blue-400/20 bg-blue-500/10 transition duration-300 group-hover:border-blue-400/40 group-hover:bg-blue-500/20">
-            <Compass className="h-5 w-5 text-blue-400 transition-transform duration-500 group-hover:rotate-45" />
+          {/* Actual MK World Logo */}
+          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden">
+            <Image
+              src="/mklogo.png"
+              alt="MK World"
+              width={40}
+              height={40}
+              priority
+              className="h-10 w-10 object-contain transition duration-300 group-hover:scale-105"
+            />
           </div>
 
+          {/* Wordmark */}
           <div>
-            <div className="text-lg font-bold tracking-tight text-white">
-              MK<span className="text-blue-400">World</span>
+            <div className="text-lg font-bold tracking-[-0.03em] text-white">
+              MK
+              <span className="text-blue-400">World</span>
             </div>
 
             <div className="hidden text-[9px] font-semibold uppercase tracking-[0.22em] text-zinc-500 sm:block">
@@ -38,7 +49,20 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/contact"
-          className="hidden bg-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_25px_rgba(59,130,246,0.2)] transition hover:bg-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.35)] sm:flex"
+          className="
+            hidden
+            bg-blue-500
+            px-5
+            py-2.5
+            text-sm
+            font-semibold
+            text-white
+            shadow-[0_0_25px_rgba(59,130,246,0.2)]
+            transition
+            hover:bg-blue-400
+            hover:shadow-[0_0_35px_rgba(59,130,246,0.35)]
+            sm:flex
+          "
         >
           Talk to Us
         </Link>
@@ -49,7 +73,21 @@ export default function Navbar() {
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((value) => !value)}
-          className="flex h-10 w-10 items-center justify-center border border-white/10 bg-white/[0.03] text-zinc-300 transition hover:border-blue-400/30 hover:text-white md:hidden"
+          className="
+            flex
+            h-10
+            w-10
+            items-center
+            justify-center
+            border
+            border-white/10
+            bg-white/[0.03]
+            text-zinc-300
+            transition
+            hover:border-blue-400/30
+            hover:text-white
+            md:hidden
+          "
         >
           {mobileOpen ? (
             <X className="h-5 w-5" />
@@ -61,14 +99,39 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {mobileOpen && (
-        <div className="border-t border-white/[0.06] bg-[#030712]/95 px-5 py-5 backdrop-blur-2xl md:hidden">
+        <div
+          className="
+            border-t
+            border-white/[0.06]
+            bg-[#030712]/95
+            px-5
+            py-5
+            backdrop-blur-2xl
+            md:hidden
+          "
+        >
           <div className="mx-auto max-w-7xl">
-            <Navigation mobile onNavigate={() => setMobileOpen(false)} />
+            <Navigation
+              mobile
+              onNavigate={() => setMobileOpen(false)}
+            />
 
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="mt-3 flex h-12 items-center justify-center bg-blue-500 text-sm font-semibold text-white transition hover:bg-blue-400"
+              className="
+                mt-3
+                flex
+                h-12
+                items-center
+                justify-center
+                bg-blue-500
+                text-sm
+                font-semibold
+                text-white
+                transition
+                hover:bg-blue-400
+              "
             >
               Talk to Us
             </Link>

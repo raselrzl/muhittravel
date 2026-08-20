@@ -115,7 +115,7 @@ export default function OmrahPage() {
             <div className="relative">
               <div className="mb-7 inline-flex items-center gap-2 border border-sky-400/20 bg-sky-500/[0.06] px-3 py-2 text-xs font-bold uppercase tracking-[0.2em] text-sky-300">
                 <Sparkles className="h-3.5 w-3.5" />
-                Umrah Visa Processing
+                MK World · Umrah Services
               </div>
 
               <h1 className="max-w-4xl text-5xl font-black leading-[0.94] tracking-[-0.06em] text-white sm:text-6xl lg:text-8xl">
@@ -131,7 +131,7 @@ export default function OmrahPage() {
               </p>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-zinc-500">
-                Travel Friends helps individuals and families understand the
+                MK World helps individuals and families understand the
                 relevant visa and travel preparation steps for their journey
                 to Saudi Arabia.
               </p>
@@ -151,6 +151,7 @@ export default function OmrahPage() {
                   className="flex h-14 items-center justify-center gap-2 border border-white/10 bg-white/[0.03] px-7 font-semibold text-zinc-300 transition hover:border-sky-400/30 hover:bg-sky-500/[0.04] hover:text-white"
                 >
                   See the Process
+
                   <ChevronRight className="h-4 w-4" />
                 </a>
               </div>
@@ -288,7 +289,9 @@ export default function OmrahPage() {
 
               <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 Prepare with
-                <span className="block text-zinc-500">confidence.</span>
+                <span className="block text-zinc-500">
+                  confidence.
+                </span>
               </h2>
             </div>
 
@@ -299,13 +302,13 @@ export default function OmrahPage() {
               </p>
 
               <p>
-                Our team can help you understand the visa processing steps,
+                MK World can help you understand the visa processing steps,
                 organize your documentation, and prepare for your departure.
               </p>
 
               <div className="border-l-2 border-blue-500 bg-blue-500/[0.04] px-6 py-5">
                 <p className="font-medium text-zinc-200">
-                  Let us help you prepare for the journey ahead.
+                  Let MK World help you prepare for the journey ahead.
                 </p>
               </div>
             </div>
@@ -331,8 +334,8 @@ export default function OmrahPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl leading-8 text-zinc-500">
-              Practical guidance for the important steps involved in preparing
-              for your journey.
+              Practical guidance from MK World for the important steps
+              involved in preparing for your journey.
             </p>
           </div>
 
@@ -377,12 +380,14 @@ export default function OmrahPage() {
 
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   Prepare your
-                  <span className="block text-zinc-500">documents.</span>
+                  <span className="block text-zinc-500">
+                    documents.
+                  </span>
                 </h2>
 
                 <p className="mt-6 leading-8 text-zinc-500">
                   Requirements can vary depending on the applicant and the
-                  current Saudi Arabian visa process. We can help you
+                  current Saudi Arabian visa process. MK World can help you
                   understand what information and documentation may be
                   required.
                 </p>
@@ -425,7 +430,9 @@ export default function OmrahPage() {
 
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               From preparation
-              <span className="block text-zinc-500">to departure.</span>
+              <span className="block text-zinc-500">
+                to departure.
+              </span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl leading-8 text-zinc-500">
@@ -472,7 +479,7 @@ export default function OmrahPage() {
               Umrah visa eligibility, documentation, fees, processing
               procedures, travel requirements, and entry conditions may change
               according to the relevant Saudi Arabian authorities and current
-              regulations. We help you understand the process, but visa
+              regulations. MK World helps you understand the process, but visa
               approval is determined by the relevant authorities.
             </p>
           </div>
@@ -498,7 +505,7 @@ export default function OmrahPage() {
             </h2>
 
             <p className="mx-auto mt-7 max-w-2xl leading-8 text-zinc-400">
-              Tell us about your travel plans and we&apos;ll help you
+              Tell MK World about your travel plans and we&apos;ll help you
               understand the next steps for your Umrah visa preparation.
             </p>
 
@@ -507,7 +514,7 @@ export default function OmrahPage() {
                 href="/contact"
                 className="group flex h-14 items-center justify-center gap-3 bg-blue-600 px-8 font-semibold text-white shadow-[0_0_50px_rgba(37,99,235,0.2)] transition hover:bg-blue-500 hover:shadow-[0_0_65px_rgba(37,99,235,0.3)]"
               >
-                Start Your Umrah Journey
+                Contact MK World
 
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
@@ -531,14 +538,16 @@ export default function OmrahPage() {
 
       <footer className="relative z-10 border-t border-white/[0.06] bg-[#01040a]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_0.7fr_0.7fr] lg:px-10">
+          {/* Brand */}
+
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center bg-sky-500/10">
                 <Compass className="h-5 w-5 text-sky-400" />
               </div>
 
-              <span className="text-xl font-bold">
-                Travel<span className="text-sky-400">Friends</span>
+              <span className="text-xl font-bold tracking-tight">
+                MK<span className="text-sky-400"> World</span>
               </span>
             </Link>
 
@@ -547,6 +556,8 @@ export default function OmrahPage() {
               people planning their next international experience.
             </p>
           </div>
+
+          {/* Explore */}
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
@@ -598,6 +609,8 @@ export default function OmrahPage() {
             </div>
           </div>
 
+          {/* Services */}
+
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
               Services
@@ -615,7 +628,7 @@ export default function OmrahPage() {
         <div className="border-t border-white/[0.06]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
             <p>
-              © {new Date().getFullYear()} Travel Friends. All rights reserved.
+              © {new Date().getFullYear()} MK World. All rights reserved.
             </p>
 
             <div className="flex items-center gap-2">
