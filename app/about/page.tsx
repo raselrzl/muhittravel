@@ -33,11 +33,11 @@ const team = [
       "Helping clients understand their options and making international education and travel easier to navigate.",
   },
   {
-    name: "Your Name",
+    name: "Md Ariful Islam",
     role: "International Consultant",
     country: "Cyprus",
     countryCode: "🇨🇾",
-    image: "/team/consultant-2.jpg",
+    image: "/arifulislam.jpeg",
     description:
       "Supporting students with practical guidance and connecting them with opportunities in different destinations.",
   },
@@ -227,9 +227,7 @@ export default function AboutPage() {
 
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               The people behind
-              <span className="block text-zinc-500">
-                MK World.
-              </span>
+              <span className="block text-zinc-500">MK World.</span>
             </h2>
 
             <p className="mt-6 max-w-2xl leading-8 text-zinc-500">
@@ -246,22 +244,33 @@ export default function AboutPage() {
                 key={`${person.name}-${person.role}`}
                 className="group overflow-hidden border border-white/[0.07] bg-[#07101f] transition duration-300 hover:border-blue-400/20 hover:bg-[#09172a]"
               >
-                {/* IMAGE */}
+                {/* IMAGE / FALLBACK */}
                 <div className="relative aspect-[4/5] overflow-hidden bg-[#0b1627]">
-                  <Image
-                    src={person.image}
-                    alt={person.name}
-                    fill
-                    className="object-cover grayscale-[15%] transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-                  />
+                  {person.image ? (
+                    <Image
+                      src={person.image}
+                      alt={person.name}
+                      fill
+                      className="object-cover grayscale-[15%] transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-[#0b1627] via-[#0a1424] to-[#07101f]">
+                      <div className="flex h-24 w-24 items-center justify-center rounded-full border border-blue-400/20 bg-blue-500/[0.08]">
+                        <Users className="h-10 w-10 text-blue-400/70" />
+                      </div>
 
+                      <span className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-zinc-600">
+                        Photo coming soon
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07101f] via-transparent to-transparent" />
 
+                  {/* Country */}
                   <div className="absolute left-4 top-4 flex items-center gap-2 border border-white/10 bg-black/40 px-3 py-2 text-xs font-medium text-white backdrop-blur-xl">
-                    <span className="text-base">
-                      {person.countryCode}
-                    </span>
-
+                    <span className="text-base">{person.countryCode}</span>
                     <span>{person.country}</span>
                   </div>
                 </div>
@@ -315,9 +324,7 @@ export default function AboutPage() {
                     key={destination.name}
                     className="border border-white/[0.07] bg-white/[0.02] p-7 transition hover:border-blue-400/20 hover:bg-blue-500/[0.03]"
                   >
-                    <div className="text-4xl">
-                      {destination.flag}
-                    </div>
+                    <div className="text-4xl">{destination.flag}</div>
 
                     <h3 className="mt-6 text-xl font-bold text-white">
                       {destination.name}
@@ -392,9 +399,7 @@ export default function AboutPage() {
 
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   You are not
-                  <span className="block text-zinc-500">
-                    doing it alone.
-                  </span>
+                  <span className="block text-zinc-500">doing it alone.</span>
                 </h2>
 
                 <p className="mt-6 max-w-xl leading-8 text-zinc-400">
@@ -516,17 +521,11 @@ export default function AboutPage() {
             </h3>
 
             <div className="mt-5 flex flex-col gap-3 text-sm text-zinc-500">
-              <Link
-                href="/"
-                className="transition hover:text-blue-400"
-              >
+              <Link href="/" className="transition hover:text-blue-400">
                 Home
               </Link>
 
-              <Link
-                href="/about"
-                className="text-blue-400"
-              >
+              <Link href="/about" className="text-blue-400">
                 About
               </Link>
 
