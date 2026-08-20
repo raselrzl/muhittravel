@@ -6,57 +6,155 @@ import ContactForm from "./components/ContactForm";
 
 export const metadata: Metadata = {
   title: {
-    default: "Travel Friends | Study, Travel & Explore",
-    template: "%s | Travel Friends",
+    default: "MK World | Study, Travel & Visa Guidance",
+    template: "%s | MK World",
   },
 
   description:
-    "Travel Friends provides guidance for students, travelers, families, and individuals planning to study, travel, visit, or perform Umrah abroad.",
+    "MK World provides study abroad, student visa, visit visa, travel and international education guidance for students, travelers and families from Bangladesh.",
 
   keywords: [
-    "Travel Friends",
-    "student visa",
+    // Brand
+    "MK World",
+    "MK World Bangladesh",
+    "MK World visa consultancy",
+    "MK World travel",
+    "MK World study abroad",
+
+    // General
     "study abroad",
-    "travel visa",
-    "visit visa",
-    "Umrah visa",
-    "visa guidance",
-    "travel planning",
-    "Saudi Arabia Umrah",
     "study abroad Bangladesh",
+    "study overseas",
+    "international education",
+    "international travel",
+    "visa consultancy",
+    "visa guidance",
+    "travel consultancy",
+    "education consultancy",
+    "study visa",
+    "student visa",
+    "visit visa",
+    "tourist visa",
+    "travel visa",
+
+    // Sweden
+    "study in Sweden",
+    "Sweden study visa",
+    "Sweden student visa",
+    "student visa Sweden",
+    "Sweden student visa Bangladesh",
+    "Sweden study abroad",
+    "Sweden university",
+    "Sweden universities",
+    "Sweden admission",
+    "Sweden visa",
+    "Sweden visit visa",
+    "visit visa Sweden",
+    "Sweden tourist visa",
+    "Sweden travel visa",
+    "Sweden visa from Bangladesh",
+    "study in Sweden from Bangladesh",
+    "Sweden education consultancy",
+
+    // Russia
+    "study in Russia",
+    "Russia study visa",
+    "Russia student visa",
+    "student visa Russia",
+    "Russia student visa Bangladesh",
+    "Russia study abroad",
+    "Russia university",
+    "Russia universities",
+    "Russia admission",
+    "Russia visa",
+    "Russia visit visa",
+    "visit visa Russia",
+    "Russia tourist visa",
+    "Russia travel visa",
+    "Russia visa from Bangladesh",
+    "study in Russia from Bangladesh",
+    "Russia education consultancy",
+
+    // Cyprus
+    "study in Cyprus",
+    "Cyprus student visa",
+    "Cyprus study visa",
+    "student visa Cyprus",
+    "Cyprus university",
+    "Cyprus admission",
+    "Cyprus visa",
+    "Cyprus visit visa",
+    "visit visa Cyprus",
+
+    // Bangladesh
+    "student visa Bangladesh",
+    "study abroad consultancy Bangladesh",
+    "visa consultancy Bangladesh",
+    "student visa consultancy Bangladesh",
+    "travel agency Bangladesh",
+    "education consultancy Bangladesh",
+    "study visa consultant Bangladesh",
+
+    // Travel
+    "travel consultation",
+    "international travel guidance",
+    "visa application guidance",
+    "visa application support",
+    "study visa guidance",
+    "student visa guidance",
+    "visit visa guidance",
+    "international student consultancy",
+
+    // Umrah
+    "Umrah visa",
+    "Umrah travel",
+    "Umrah guidance",
+    "Saudi Arabia Umrah",
   ],
 
   authors: [
     {
-      name: "Travel Friends",
+      name: "MK World",
+      url: "https://mkworld.org",
     },
   ],
 
-  creator: "Travel Friends",
-  publisher: "Travel Friends",
+  creator: "MK World",
+  publisher: "MK World",
 
   metadataBase: new URL("https://mkworld.org"),
 
+  alternates: {
+    canonical: "https://mkworld.org",
+  },
+
   openGraph: {
-    title: "Travel Friends | Study, Travel & Explore",
+    title: "MK World | Study, Travel & Visa Guidance",
     description:
-      "Guidance for study, travel, visa preparation, and Umrah journeys.",
+      "Study abroad, student visa, visit visa and international travel guidance from MK World.",
     url: "https://mkworld.org",
-    siteName: "Travel Friends",
+    siteName: "MK World",
     locale: "en_US",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Travel Friends | Study, Travel & Explore",
+    title: "MK World | Study, Travel & Visa Guidance",
     description:
-      "Guidance for study, travel, visa preparation, and Umrah journeys.",
+      "Study abroad, student visa, visit visa and international travel guidance from MK World.",
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -71,6 +169,7 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+
         <ContactForm />
       </body>
     </html>
